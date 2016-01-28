@@ -1,0 +1,11 @@
+frontend:  
+    environment:
+        - EMBER_ENV=development
+    ports:
+        - "4200:4200"
+        - "49152:49152"
+    volumes:
+        - "./frontend:/app"
+backend:  
+    volumes:
+        - "./backend:/app"

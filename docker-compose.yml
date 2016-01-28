@@ -1,0 +1,12 @@
+frontend:  
+    build: "frontend/"
+    dockerfile: "Dockerfile"
+    environment:
+        - EMBER_ENV=production
+    ports:
+        - "4200:4200"
+backend:  
+    build: "backend/"
+    dockerfile: "Dockerfile"
+    ports:
+        - "3000:3000"
